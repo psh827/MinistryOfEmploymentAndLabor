@@ -1,0 +1,14 @@
+@import "./reset.scss";
+@import "./variable.scss";
+@import "./layout.scss";
+
+.flex-just-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
