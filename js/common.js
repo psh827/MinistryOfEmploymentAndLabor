@@ -6,6 +6,7 @@ const notice_content = document.querySelectorAll(
   ".main-news-notice-wrap .notice-content"
 );
 const select_box = document.querySelectorAll(".select-box");
+const all_menu_btn = document.querySelector(".gnb_btn");
 
 function addActive(item) {
   item.target.classList.toggle("active");
