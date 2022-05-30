@@ -695,6 +695,9 @@ section.container {
             .card-video__btn {
               display: block;
               position: relative;
+              &:hover{
+                  text-decoration: underline;
+              }
               .card-video__img {
                 position: relative;
                 overflow: hidden;
@@ -883,6 +886,91 @@ section.container {
               position: relative;
               overflow: hidden;
               margin-left: 128px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 50px;
+  padding: 0 0 20px;
+  font-size: 15px;
+  .site-map {
+    background-color: #063863;
+    .inner {
+      max-width: $width;
+      letter-spacing: -0.7px;
+      margin: 0 auto;
+      & > li {
+        position: relative;
+        flex: 0 0 25%;
+        max-width: 50%;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 100%;
+          background-color: #fff;
+          opacity: 0.2;
+        }
+        .select-box {
+          position: relative;
+          height: 60px;
+          .mCSB_draggerContainer {
+            top: 15px;
+            height: calc(100% - 30px);
+            .mCSB_dragger_bar {
+              background-color: #fff;
+              opacity: 0.2;
+            }
+            .mCSB_draggerRail {
+              width: 6px;
+              border-radius: 4.5px;
+              background-color: #2b557a;
+            }
+          }
+          .select-box__btn {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            color: #fff;
+            text-align: left;
+            & > span {
+              position: relative;
+              &::after {
+              }
+            }
+          }
+          .select-box__content {
+            position: absolute;
+            top: -260px;
+            z-index: 3;
+            overflow-y: auto;
+            width: 100%;
+            height: 260px;
+            padding: 5px 0 5px 20px;
+            background-color: #2b557a;
+            font-size: 13px;
+            color: #fff;
+            text-align: left;
+            ul {
+              li {
+                margin-right: 20px;
+                & + li {
+                  border-top: 1px solid #557794;
+                }
+                a {
+                  display: block;
+                  padding: 12px 0 13px;
+                }
+              }
             }
           }
         }
