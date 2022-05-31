@@ -868,7 +868,7 @@ section.container {
               font-weight: bold;
               color: #333;
               & + .main-target__img {
-                margin-left: auto; 
+                margin-left: auto;
               }
             }
             .main-target__img {
@@ -880,7 +880,93 @@ section.container {
       }
     }
     .main-field {
-
+      .main-field__box {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 12px;
+        background-color: #fff;
+        .main-field__item {
+          display: flex;
+          align-items: center;
+          flex: 1 1 50%;
+          height: 91px;
+          & + .main-field__item {
+            border-top: 1px solid #eee;
+          }
+          .main-field__link {
+            display: flex;
+            align-items: center;
+            padding: 5px 20px 6px;
+            .main-field__img {
+              width: 40px;
+              height: 40px;
+              & + .main-field__text {
+                margin-left: 12px;
+              }
+            }
+            .main-field__text {
+              font-size: 15px;
+              font-weight: bold;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+    .main-asked {
+      .asked-content {
+        border-radius: 12px;
+        background-color: #fff;
+        .asked-content__law {
+          border-radius: 12px 12px 0 0;
+          background-image: linear-gradient(to bottom, #fff 50%, #f0f5ff 150%);
+          .main-asked__box {
+            padding: 0 0 18px 151px;
+            background: url(../img/policy/asked/icon_law.png) no-repeat 0 12px /
+              132px 132px;
+            .main-asked__item {
+              border-top: 0;
+              .main-asked__link {
+                margin-right: 20px;
+                padding-right: 0;
+                border-bottom: 1px solid #eee;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 25px;
+                  left: 0;
+                  width: 3px;
+                  height: 3px;
+                  border-radius: 1.5px;
+                  background-color: #e30230;
+                }
+                .main-asked__text {
+                  padding: 20px 0 9px 7px;
+                  background-position: 100% 60%;
+                }
+              }
+            }
+          }
+        }
+        .main-asked__box {
+          .main-asked__item {
+            .main-asked__link {
+              display: block;
+              position: relative;
+              padding-right: 20px;
+              .main-asked__text {
+                padding: 18px 3px 19px 18px;
+                background: url(../img/policy/asked/icon_link.png) no-repeat
+                  100% 50% /5px 6px;
+                font-size: 15px;
+                line-height: 1;
+                font-weight: bold;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .bottom-banner {
@@ -904,27 +990,27 @@ section.container {
         }
         .swiper-button-prev.custom1 {
           left: 0;
-          background: #fff url(../img/logo/icon_arr_banner_left.png)
-            no-repeat 50% 50% / 9px 14px;
+          background: #fff url(../img/logo/icon_arr_banner_left.png) no-repeat
+            50% 50% / 9px 14px;
           &::after {
             content: "";
           }
         }
         .swiper-button-next.custom1 {
           left: 80px;
-          background: #fff url(../img/logo/icon_arr_banner_right.png)
-            no-repeat 50% 50% / 9px 14px;
+          background: #fff url(../img/logo/icon_arr_banner_right.png) no-repeat
+            50% 50% / 9px 14px;
           &::after {
             content: "";
           }
         }
         .swiper-auto-play {
           left: 40px;
-          background: #fff url(../img/logo/icon_banner_start.png) no-repeat
-            50% 50% / 9px 14px;
+          background: #fff url(../img/logo/icon_banner_start.png) no-repeat 50%
+            50% / 9px 14px;
           &.pause {
-            background: #fff url(../img/logo/icon_banner_stop03.png)
-              no-repeat 50% 50% /8px 12px;
+            background: #fff url(../img/logo/icon_banner_stop03.png) no-repeat
+              50% 50% /8px 12px;
           }
         }
         .swiper-button-all {
