@@ -1143,6 +1143,309 @@ section.container {
       }
     }
   }
+  .main-area-main {
+    display: flex;
+    .third-banner {
+      position: relative;
+      padding: 0 0 50px;
+      color: #fff;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 279px;
+        height: 1px;
+        background-color: #ddd;
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+      .third-swiper-wrap {
+        width: 768px;
+        margin: 0 auto;
+        .swiper-button-prev {
+          display: inline-block;
+          position: absolute;
+          border-radius: 100%;
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+          background: #fff url(../img/agency/main/bnt_slide_arr_03.png) no-repeat 40% 50% / 8px 12px;
+          left: 299px;
+          top: auto;
+          bottom: -10px;
+          width: 23px;
+          height: 23px;
+          opacity: .35;
+          cursor: auto;
+          pointer-events: none;
+        }
+        .swiper-button-next {
+          display: inline-block;
+          position: absolute;
+          border-radius: 100%;
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+          background: #fff url(../img/agency/main/bnt_slide_arr_04.png) no-repeat 60% 50% / 8px 12px;
+          left: 447px;
+          right: 0;
+          top: auto;
+          bottom: -10px;
+          width: 23px;
+          height: 23px;
+          opacity: .35;
+          cursor: auto;
+          pointer-events: none;
+        }
+        .swiper-auto-play {
+          display: inline-block;
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          left: 334px;
+          bottom: -19px;
+          background: url(../img/agency/main/btn_slide_stop02.png) no-repeat 50% 50% / 23px 23px;
+        }
+        .swiper-pagination {
+          display: inline-block;
+          bottom: -11px;
+          left: 372px;
+          min-width: 55px;
+          height: 23px;
+          border-radius: 12px;
+          font-size: 14px;
+          width: auto;
+          margin: 0 auto;
+          border: 1px solid #ddd;
+          background-color: #fff;
+          line-height: 1;
+          color: #666;
+        }
+        .swiper-container3 {
+          width: 100%;
+          .third-main-link__img {
+            overflow: hidden;
+            width: 240px;
+            height: 150px;
+            max-height: 204px;
+            position: relative;
+            border-radius: 12px;
+            img {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: auto;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+    .minister {
+      flex: 1 1 364px;
+      position: relative;
+      margin-left: 40px;
+      .minister-content {
+        padding: 15px 20px 20px;
+        border-radius: 12px;
+        border: 1px solid #eee;
+        background: #fff url(../img/agency/main/minister/bg_minister.png) no-repeat 100% 0 / 255px auto;
+        .flex-box {
+          div {
+            .minister-upper__text {
+              margin-top: 15px;
+              font-size: 14px;
+              line-height: 1.4;
+              color: #666;
+            }
+            .minister-upper__name {
+              margin-top: 10px;
+              font-size: 30px;
+              line-height: 1;
+              font-weight: bold;
+              color: #000;
+            }
+          }
+          .minister-upper__img {
+            width: 152px;
+            height: 152px;
+            margin-left: auto;
+          }
+        }
+        .minister-upper__box {
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 10px;
+          .minister-upper__item {
+            position: relative;
+            flex: 1 1 50%;
+            margin-top: 10px;
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-image: linear-gradient(to left, rgba(240, 240, 240, 0), #ddd);
+            }
+            .minister-upper__link {
+              display: inline-block;
+              padding: 10px 13px 10px 0;
+              background: url(../img/agency/main/minister/icon_link.png) no-repeat 100% 50% / 5px 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-area-agency {
+    display: flex;
+    margin-top: 50px !important;
+    & > div {
+      flex: 1 1 364px;
+      & + div {
+        margin-left: 40px;
+      }
+    }
+    .main-agency__content {
+      .main-agency__item {
+        & + .main-agency__item {
+          margin-top: 24px;
+        }
+        .main-agency__link {
+          display: block;
+          padding: 11px 10px 15px 20px;
+          border-radius: 12px;
+          border: 1px solid #eee;  
+          .main-agency__text {
+            margin-top: 7px;
+            color: #333;
+            line-height: 1.4;
+          }
+          .main-agency__text02 {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 5px 23px 6px 10px;
+            border-radius: 12px;
+            background: #f6f7fb url(../img/agency/main/minister/icon_link.png) no-repeat 93% 50% / 5px 6px;
+            color: #333;
+            line-height: 1.4;
+          }
+        }
+        &.main-agency__item01{
+          .main-agency__link {
+            background: #fff url(../img/agency/notice/icon_main_view01.png) no-repeat 250px 50% / 104px 88px;
+          }
+        }
+        &.main-agency__item02{
+          .main-agency__link {
+            background: #fff url(../img/agency/notice/icon_main_view02.png) no-repeat 250px 50% / 84px 88px;
+          }
+        }
+        &.main-agency__item03{
+          .main-agency__link {
+            background: #fff url(../img/agency/notice/news/icon_main_view03.png) no-repeat 250px 50% / 104px 88px;
+          }
+        }
+        &.main-agency__item04{
+          .main-agency__link {
+            background: #fff url(../img/agency/notice/news/icon_main_view04.png) no-repeat 250px 50% / 95px 109px;
+          }
+        }
+      }
+      .main-consulting {
+        padding: 45px 0 0 0;
+        border-radius: 12px;
+        border: 1px solid #eee;
+        background: #fff url(../img/agency/notice/cunsult/icon_consulting.png) no-repeat 0 0 / 76px auto;
+        .main-consulting__tel {
+          padding: 0 20px;
+          text-align: right;
+          .main-consulting__tel__text01 {
+            padding-right: 36px;
+            font-size: 14px;
+            letter-spacing: -0.63px;
+            color: #666;
+          }
+          .flex-center {
+            justify-content: end;
+            .main-consulting__tel__text02 {
+              margin-left: 8px;
+              font-size: 48px;
+              line-height: 1;
+              font-weight: bold;
+              letter-spacing: -.0.63px;
+              color: #e30230;
+            }
+            .main-consulting__tel__text03 {
+              width: 36px;
+              height: 36px;
+              margin-left: 8px;
+              padding: 12px 5px;
+              border-radius: 12px;
+              background-color: #063863;
+              text-align: center;
+              font-size: 14px;
+              line-height: 1;
+              letter-spacing: -0.5px;
+              color: #fff;
+            }
+          }
+          .main-consulting__tel__time {
+            margin-top: 25px;
+            padding: 8px 20px 7px;
+            border-radius: 15px;
+            background-color: #f6f7fb;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: -0.5px;
+            color: #666;
+          }
+        }
+        .main-consulting__box {
+          justify-content: center;
+          height: 124px;
+          margin-top: 20px;
+          border-top: 1px solid #eee;
+          text-align: center;
+          .main-consulting__item {
+            & + .main-consulting__item {
+              border-left: 1px solid #eee;
+            }
+            flex: 1 1 50%;
+            max-width: 50%;
+            padding-top: 15px;
+            .main-consulting__link {
+              display: block;
+              width: 100%;
+              height: 109px;
+              color: #063863;
+              .main-consulting__icon {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                padding: 9px;
+                border-radius: 100%;
+                background-color: #f6f7fb;
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+              .main-consulting__text {
+                display: block;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .bottom-banner {
     margin-top: 50px;
     .inner {
