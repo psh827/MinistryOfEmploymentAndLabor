@@ -24,6 +24,13 @@ mySwiper.on("slideChange", function () {
 });
 
 //agency swiepr 
+const agencyMaxLeng = $(".swiper-container3").length;
+console.log(agencyMaxLeng);
+const agencyMyLeng = $(".swiper-container3 .swiper-wrapper").length;
+const agencyInner = $(".third-banner .total-leng");
+console.log(agencyInner);
+const agencyMyInner = $(".third-banner .now-index")
+console.log(agencyMyInner);
 var agencySwiper = new Swiper(".swiper-container3", {
   slidesPerView: 3,
   spaceBetween: 24,
@@ -33,6 +40,8 @@ var agencySwiper = new Swiper(".swiper-container3", {
     prevEl: ".third-swiper-wrap .swiper-button-prev.custom1",
   }
  })
+ agencyInner.innerText = agencyMaxLeng;
+ agencyMyInner.innerText = agencyMyLeng;
 
 //footerbanner
 var mysecondSwiper = new Swiper(".swiper-container2", {
